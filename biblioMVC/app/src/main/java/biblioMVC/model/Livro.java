@@ -4,16 +4,16 @@ public class Livro {
     private int id;
     private String titulo;
     private String autor;
-    private int anoPublicacao;
+    private int ano;
 
     // Construtor
-    public Livro(int id, String titulo, String autor, int anoPublicacao) {
+    public Livro(int id, String titulo, String autor, int ano) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
-        this.anoPublicacao = anoPublicacao;
+        this.ano = ano;
     }
-
+        
     // Métodos Getters e Setters para acessar os atributos
     public int getId() {
         return id;
@@ -37,13 +37,13 @@ public class Livro {
 
     public void setAutor(String autor) {
         this.autor = autor;
+    }   
+
+    public int getAno() {
+        return ano;
     }
 
-    public int getAnoPublicacao() {
-        return anoPublicacao;
-    }
-
-    public void setAnoPublicacao(int anoPublicacao) {
-        this.anoPublicacao = anoPublicacao;
+    public void setAno(int ano) {
+        this.ano = ano;
     }
 }
